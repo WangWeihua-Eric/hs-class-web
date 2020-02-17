@@ -6,7 +6,11 @@
 
 <script>
     export default {
-        name: 'Poster'
+        name: 'Poster',
+        beforeCreate() {
+            const deliveryAsn = this.$route.query;
+            console.log(deliveryAsn);
+        }
     };
 </script>
 
