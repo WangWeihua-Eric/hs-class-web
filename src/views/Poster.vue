@@ -50,6 +50,10 @@
         beforeCreate() {
             const deliveryAsn = this.$route.query;
             console.log(deliveryAsn);
+
+            this.$http.get('https://douban.uieee.com/v2/movie/in_theaters').then(({data}) => {
+                console.log(data);
+            });
         }
     };
 </script>
