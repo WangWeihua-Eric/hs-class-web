@@ -84,7 +84,7 @@
     };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
     span {
         width: 100px;
