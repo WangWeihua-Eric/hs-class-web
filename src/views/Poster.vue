@@ -41,6 +41,7 @@
 
 <script>
     import {Qrcode} from 'vux';
+    import {WxAuthority} from '../service/wx-authority';
 
     export default {
         name: 'Poster',
@@ -52,6 +53,8 @@
             console.log(deliveryAsn);
 
             this.$http.get('https://douban.uieee.com/v2/movie/in_theaters').then(({data}) => {
+                const wxAuthority = new WxAuthority();
+                wxAuthority.getWxSnsapiUserinfo();
                 console.log(data);
             });
         }

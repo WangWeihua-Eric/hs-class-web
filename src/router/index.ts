@@ -17,6 +17,11 @@ const routes = [
         name: 'Poster',
         component: () => import('../views/Poster.vue')
     },
+    {
+        path: '/test',
+        name: 'ActiveForWuHan',
+        component: () => import('../views/ActiveForWuHan.vue')
+    },
 ];
 
 const router = new VueRouter({

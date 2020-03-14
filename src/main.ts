@@ -14,7 +14,7 @@ FastClick.attach(document.body);
 
 Vue.use(AjaxPlugin);
 
-new Vue({
+export const $vue = new Vue({
   router,
   store,
   render: (h) => h(App),
